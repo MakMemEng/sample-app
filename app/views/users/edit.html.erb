@@ -1,0 +1,11 @@
+<% provide(:title, 'Edit user') %>
+<!--送信ボタン(submit)にテキストを与えている-->
+<% provide(:button_text, 'Save changes') %>
+<h1>Update your profile</h1>
+
+<!--ここでformパーシャルを読み込んでいる-->
+<%= render 'form' %>
+<div class="gravatar_edit">
+  <%= gravatar_for @user %>
+  <a href="https://gravatar.com/emails" target="_blank">Change</a>
+</div>
